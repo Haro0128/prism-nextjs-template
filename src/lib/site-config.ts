@@ -7,10 +7,16 @@
 
 export const siteConfig = {
   // ── 基本情報 ──────────────────────────────────────────────
-  name: 'YOUR_COMPANY_NAME',
-  legalName: 'YOUR_COMPANY_LEGAL_NAME',
-  tagline: 'YOUR_INDUSTRY_OR_CATEGORY', // ヘッダー直下の小見出し (例: "Strategic Consulting")
-  description: 'YOUR_SITE_META_DESCRIPTION',
+  name: 'ARKANA Consulting',
+  legalName: 'ARKANA Consulting',
+  tagline: 'Strategic Consulting',
+  description:
+    '戦略・テクノロジー・デザインを融合し、企業の本質的な変革を支援するコンサルティングファームです。',
+
+  // ── SEO / OGP ─────────────────────────────────────────────
+  url: 'https://arkana-consulting.jp',          // 本番ドメインに変更してください
+  ogImage: '/og-image.png',                      // public/og-image.png を配置してください
+  twitterHandle: '@arkana_consulting',           // Twitter/X アカウントがあれば設定
 
   // ── ナビゲーション ─────────────────────────────────────────
   nav: [
@@ -22,32 +28,46 @@ export const siteConfig = {
 
   // ── Hero セクション ────────────────────────────────────────
   hero: {
-    headingLine1: 'YOUR_HERO_HEADING_LINE_1',
-    headingLine2: 'YOUR_HERO_HEADING_LINE_2',
-    body: 'YOUR_HERO_BODY_TEXT',
-    ctaPrimary: 'YOUR_CTA_PRIMARY_LABEL',   // 例: "サービスを見る"
-    ctaSecondary: 'YOUR_CTA_SECONDARY_LABEL', // 例: "お問い合わせ"
+    headingLine1: '未来を、',
+    headingLine2: '共に設計する。',
+    body: 'ARKANAは戦略・テクノロジー・デザインを融合し、企業の本質的な変革を支援するコンサルティングファームです。',
+    ctaPrimary: 'サービスを見る',
+    ctaSecondary: 'お問い合わせ',
   },
 
   // ── About セクション ───────────────────────────────────────
   about: {
-    heading: 'YOUR_ABOUT_HEADING',
-    body1: 'YOUR_ABOUT_BODY_PARAGRAPH_1',
-    body2: 'YOUR_ABOUT_BODY_PARAGRAPH_2',
+    heading: '本質的な問いから、\n変革は始まる。',
+    body1:
+      'ARKANAとは、「秘められた知識・叡智」を意味する言葉です。私たちは、表面的な課題解決にとどまらず、組織の深層にある本質的な問題を見抜き、持続的な価値創造へと導きます。',
+    body2:
+      '戦略コンサルタント、エンジニア、デザイナーが一体となったチームで、クライアントの変革パートナーとして伴走します。',
   },
 
   // ── Services セクション ────────────────────────────────────
   services: [
-    { title: 'YOUR_SERVICE_1_TITLE', description: 'YOUR_SERVICE_1_DESCRIPTION' },
-    { title: 'YOUR_SERVICE_2_TITLE', description: 'YOUR_SERVICE_2_DESCRIPTION' },
-    { title: 'YOUR_SERVICE_3_TITLE', description: 'YOUR_SERVICE_3_DESCRIPTION' },
-    { title: 'YOUR_SERVICE_4_TITLE', description: 'YOUR_SERVICE_4_DESCRIPTION' },
+    {
+      title: '経営戦略',
+      description: '市場分析から中長期戦略の策定まで、事業の羅針盤を共に描きます。',
+    },
+    {
+      title: 'DX推進',
+      description: 'テクノロジーを活用した業務変革・デジタルトランスフォーメーションを支援します。',
+    },
+    {
+      title: '組織変革',
+      description: '人材・カルチャー・プロセスを最適化し、持続的な成長組織を構築します。',
+    },
+    {
+      title: 'ブランド戦略',
+      description: 'ビジョンを言語化・可視化し、強固なブランドアイデンティティを確立します。',
+    },
   ],
 
   // ── Contact セクション ─────────────────────────────────────
   contact: {
-    heading: 'YOUR_CONTACT_HEADING',          // 例: "お問い合わせ"
-    subheading: 'YOUR_CONTACT_SUBHEADING',    // 例: "お気軽にご相談ください"
-    submitLabel: 'YOUR_SUBMIT_BUTTON_LABEL',  // 例: "送信する"
+    heading: 'お問い合わせ',
+    subheading: 'プロジェクトのご相談・資料請求など、お気軽にお問い合わせください。',
+    submitLabel: '送信する',
   },
 } as const

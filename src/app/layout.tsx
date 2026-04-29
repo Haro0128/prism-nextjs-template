@@ -11,8 +11,62 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  // ── metadataBase: 相対 URL を絶対 URL に解決するベース ───────
+  metadataBase: new URL(siteConfig.url),
+
+  // ── title: テンプレート形式でサブページにも対応 ───────────────
+  title: {
+    default: `${siteConfig.name} | ${siteConfig.tagline}`,
+    template: `%s | ${siteConfig.name}`,
+  },
+
+  // ── meta description ────────────────────────────────────────
   description: siteConfig.description,
+
+  // ── canonical ───────────────────────────────────────────────
+  alternates: {
+    canonical: '/',
+  },
+
+  // ── OGP ─────────────────────────────────────────────────────
+  openGraph: {
+    type: 'website',
+    locale: 'ja_JP',
+    url: '/',
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
+    description: siteConfig.description,
+    images: [
+      {
+        url: '/opengraph-image',   // app/opengraph-image.tsx が自動提供
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+
+  // ── Twitter Card ────────────────────────────────────────────
+  twitter: {
+    card: 'summary_large_image',
+    site: siteConfig.twitterHandle,
+    creator: siteConfig.twitterHandle,
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
+    description: siteConfig.description,
+    images: ['/opengraph-image'],
+  },
+
+  // ── robots ──────────────────────────────────────────────────
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({
