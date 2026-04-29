@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/**
+ * PRISM Next.js Template — Brand Colors
+ * ブランドカラーをここで定義してください。
+ * Tailwind クラスから `var(--color-brand-*)` として参照できます。
+ */
+:root {
+  --color-brand-primary: #ffffff;       /* YOUR_PRIMARY_COLOR   例: #0066ff */
+  --color-brand-primary-hover: #e5e5e5; /* YOUR_PRIMARY_HOVER   例: #0052cc */
+  --color-brand-accent: #ffffff;        /* YOUR_ACCENT_COLOR    例: #ff6600 */
+
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
