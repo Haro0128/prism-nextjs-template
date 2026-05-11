@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: '/opengraph-image',   // app/opengraph-image.tsx が自動提供
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     creator: siteConfig.twitterHandle,
     title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ['/opengraph-image'],
+    images: ['/og-image.png'],
   },
 
   // ── robots ──────────────────────────────────────────────────
