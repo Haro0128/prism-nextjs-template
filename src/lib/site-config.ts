@@ -1,73 +1,120 @@
 /**
- * PRISM Next.js Template — Site Configuration
- *
- * このファイルをクライアントごとに編集してください。
- * コンポーネント側は変更不要です。
+ * PRISM — Site Configuration
  */
 
 export const siteConfig = {
   // ── 基本情報 ──────────────────────────────────────────────
-  name: 'ARKANA Consulting',
-  legalName: 'ARKANA Consulting',
-  tagline: 'Strategic Consulting',
+  name: 'PRISM',
+  legalName: 'PRISM',
+  tagline: 'AI Creative Studio',
   description:
-    '戦略・テクノロジー・デザインを融合し、企業の本質的な変革を支援するコンサルティングファームです。',
+    'AIクリエイティブチームが、LP・ブランド・Web・SNSを一気通貫で制作します。センスと成果、どちらも妥協しない。',
 
   // ── SEO / OGP ─────────────────────────────────────────────
-  url: 'https://arkana-consulting.jp',          // 本番ドメインに変更してください
-  ogImage: '/og-image.png',                      // public/og-image.png を配置してください
-  twitterHandle: '@arkana_consulting',           // Twitter/X アカウントがあれば設定
+  url: 'https://prism-creative.jp',
+  ogImage: '/og-image.png',
+  twitterHandle: '@prism_creative',
 
   // ── ナビゲーション ─────────────────────────────────────────
   nav: [
-    { href: '#about', label: 'About' },
     { href: '#services', label: 'Services' },
     { href: '#works', label: 'Works' },
+    { href: '#team', label: 'Team' },
     { href: '#contact', label: 'Contact' },
   ],
 
   // ── Hero セクション ────────────────────────────────────────
   hero: {
-    headingLine1: '未来を、',
-    headingLine2: '共に設計する。',
-    body: 'ARKANAは戦略・テクノロジー・デザインを融合し、企業の本質的な変革を支援するコンサルティングファームです。',
+    headingLine1: 'センスと成果、',
+    headingLine2: 'どちらも妥協しない。',
+    body: 'AIクリエイティブチームが、LP・ブランド・Web・SNSを一気通貫で制作します。',
     ctaPrimary: 'サービスを見る',
-    ctaSecondary: 'お問い合わせ',
-  },
-
-  // ── About セクション ───────────────────────────────────────
-  about: {
-    heading: '本質的な問いから、\n変革は始まる。',
-    body1:
-      'ARKANAとは、「秘められた知識・叡智」を意味する言葉です。私たちは、表面的な課題解決にとどまらず、組織の深層にある本質的な問題を見抜き、持続的な価値創造へと導きます。',
-    body2:
-      '戦略コンサルタント、エンジニア、デザイナーが一体となったチームで、クライアントの変革パートナーとして伴走します。',
+    ctaSecondary: '無料相談する',
   },
 
   // ── Services セクション ────────────────────────────────────
   services: [
     {
-      title: '経営戦略',
-      description: '市場分析から中長期戦略の策定まで、事業の羅針盤を共に描きます。',
+      title: 'LP制作',
+      description: '高転換率を追求したランディングページを、戦略設計からデザイン・実装まで一貫して制作します。',
     },
     {
-      title: 'DX推進',
-      description: 'テクノロジーを活用した業務変革・デジタルトランスフォーメーションを支援します。',
+      title: 'ブランドVI設計',
+      description: 'ロゴ・カラー・タイポグラフィを体系化し、すべてのタッチポイントで一貫したブランド体験を構築します。',
     },
     {
-      title: '組織変革',
-      description: '人材・カルチャー・プロセスを最適化し、持続的な成長組織を構築します。',
+      title: 'Web開発・UI実装',
+      description: 'Next.js・Cloudflare Workersを用いた高速・高品質なWebサイト・Webアプリを開発します。',
     },
     {
-      title: 'ブランド戦略',
-      description: 'ビジョンを言語化・可視化し、強固なブランドアイデンティティを確立します。',
+      title: 'SNS・コンテンツ制作',
+      description: 'Instagram / TikTok / X向けのビジュアルコンテンツとコピーを継続的に制作・運用します。',
+    },
+    {
+      title: 'SEO・広告運用',
+      description: '検索流入の最大化と広告ROIの改善を、データドリブンで実行します。',
+    },
+    {
+      title: '映像・モーション制作',
+      description: 'プロモーション映像・リール・アニメーションを企画から納品まで対応します。',
     },
   ],
 
+  // ── Works セクション ──────────────────────────────────────
+  works: [
+    {
+      client: 'ARKANA Consulting',
+      category: 'Web Development',
+      tags: ['Next.js', 'Cloudflare Workers'],
+      highlight: 'Lighthouse 98点',
+      description: 'コンサルティングファームのコーポレートサイトをフルスクラッチで設計・開発。圧倒的なパフォーマンスと洗練されたブランド表現を両立。',
+    },
+    {
+      client: 'CIEL Skincare',
+      category: 'LP Design',
+      tags: ['ダーク', 'ラグジュアリー', 'エディトリアル'],
+      highlight: 'コンバージョン率 3.2倍',
+      description: 'プレミアムスキンケアブランドのLPを、ダーク×ラグジュアリーなエディトリアルデザインで制作。ブランドの世界観とCVRを両立。',
+    },
+  ],
+
+  // ── Team セクション ────────────────────────────────────────
+  team: {
+    director: {
+      name: 'ハロ',
+      role: 'Creative Director',
+      description: 'AIチームを統率するクリエイティブディレクター。全プロジェクトの品質を保証します。',
+    },
+    core: [
+      { name: 'Rex', role: '戦略PL', description: 'プロジェクト全体の戦略立案とプランニングを担当。' },
+      { name: 'Mia', role: 'LP・データ分析', description: 'ランディングページ設計とコンバージョンデータ分析を専任。' },
+      { name: 'Hana', role: 'グラフィック・ブランド', description: 'ビジュアルアイデンティティとグラフィックデザインを担当。' },
+      { name: 'Leo', role: '映像・モーション', description: '映像制作・モーショングラフィックスを担当。' },
+      { name: 'Sora', role: 'SNS・コンテンツ', description: 'SNSコンテンツの企画・制作・運用を担当。' },
+      { name: 'Ren', role: 'SEO・広告運用', description: '検索最適化と広告パフォーマンス改善を担当。' },
+      { name: 'Kai', role: 'エンジニア・テック', description: 'テクノロジー選定とエンジニアリングを担当。' },
+      { name: 'Nova', role: 'Web開発・UI', description: 'フロントエンド実装とUI設計を担当。' },
+      { name: 'Aya', role: 'PM・クライアント対応', description: 'プロジェクト管理とクライアントコミュニケーションを担当。' },
+    ],
+    extended: [
+      { name: 'Cole', role: 'セールス・営業' },
+      { name: 'Luna', role: '秘書・スケジュール管理' },
+      { name: 'Zoe', role: 'カスタマーサクセス' },
+      { name: 'Lex', role: '法務' },
+      { name: 'Prof. Aria', role: 'MBA講師' },
+    ],
+    instagram: [
+      { name: 'Lumi', role: 'インスタ運用' },
+      { name: 'Kael', role: 'SNS分析' },
+      { name: 'Rio', role: 'DM対応' },
+      { name: 'Noa', role: 'ビジュアル制作' },
+    ],
+  },
+
   // ── Contact セクション ─────────────────────────────────────
   contact: {
-    heading: 'お問い合わせ',
-    subheading: 'プロジェクトのご相談・資料請求など、お気軽にお問い合わせください。',
-    submitLabel: '送信する',
+    heading: '無料相談する',
+    subheading: 'LP制作・ブランド設計・Web開発など、まずはお気軽にご相談ください。48時間以内にご返信します。',
+    submitLabel: '相談を送る',
   },
 } as const
