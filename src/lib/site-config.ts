@@ -36,11 +36,11 @@ export const siteConfig = {
   services: [
     {
       title: 'LP制作',
-      description: '商品やサービスの魅力が伝わるページを、企画から公開まで一貫して制作します。',
+      description: '商品やサービスの魅力が伝わるページを、企画から公開まで制作します。',
     },
     {
       title: 'ブランドVI設計',
-      description: 'ロゴ・カラー・タイポグラフィを体系化し、すべてのタッチポイントで一貫したブランド体験を構築します。',
+      description: 'ロゴや色、文字の使い方をそろえ、統一感のある見た目を設計します。',
     },
     {
       title: 'Web開発・UI実装',
