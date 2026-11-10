@@ -36,7 +36,7 @@ export const siteConfig = {
   services: [
     {
       title: 'LP制作',
-      description: '高転換率を追求したランディングページを、戦略設計からデザイン・実装まで一貫して制作します。',
+      description: '商品やサービスの魅力が伝わるページを、企画から公開まで一貫して制作します。',
     },
     {
       title: 'ブランドVI設計',
